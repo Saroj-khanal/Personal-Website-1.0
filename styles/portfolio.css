@@ -1,0 +1,335 @@
+body {
+    margin: 0px;
+    padding: 0px;
+    background-color: rgb(184, 178, 178);
+}
+
+a {
+    text-decoration: none;
+}
+
+#heading-portfolio {
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 20px;
+    padding-bottom: 10px;
+    width: 100%;
+    height: auto;
+    background-color: black;
+    text-align: center;
+    font-size: 50px;
+    font-family: 'Berkshire Swash', cursive;
+}
+/* letter coloring start */
+#letter-p {
+    color: darkkhaki;
+}
+
+#letter-o {
+    color: rgb(255, 166, 0);
+}
+
+#letter-r {
+    color: rosybrown;
+}
+
+#letter-t {
+    color: turquoise;
+}
+
+#letter-f {
+    color: silver;
+}
+
+#letter-oo {
+    color: skyblue;
+}
+
+#letter-l {
+    color: violet;
+}
+
+#letter-i {
+    color: yellowgreen;
+}
+
+#letter-ooo {
+    color: brown;
+}
+/* letter coloring ends */
+
+#feedback-anker {
+    display: block;
+    background-color: rgb(170, 162, 162);
+    width: 100%;
+    margin: 0px auto;
+    text-decoration: none;
+    text-align: center;
+    padding-top: 10px;
+    padding-bottom: 8px;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+#feedback-anker:hover {
+    background-color: rgb(128, 125, 125);
+    color: rgb(224, 211, 211);
+}
+
+#grid-container {
+     display: grid;
+     grid-gap: 70px;
+     grid-template-columns: auto 2px auto;
+     grid-auto-rows: auto;
+     margin-top: 50px;
+     margin-left: 20px;
+     margin-right: 40px;
+}
+
+.text-box {
+    grid-row: 1;
+    grid-column: 1;
+    border-radius: 35px;
+    font-size: 35px;
+    text-align: center; 
+    background-color: rgb(168, 151, 151);
+}
+
+.text-box-heading {
+    background-color: rgb(146, 131, 131);
+    padding-top: 20px;
+    padding-bottom: 20px;
+    font-family: 'Alata', sans-serif;
+}
+
+#text-details {
+    padding-left: 30px;
+    font-size: 30px;
+    font-family: 'Markazi Text', serif;
+    background-color: rgb(173, 159, 159);
+    border-radius: 25px;
+    padding-top: 40px;
+    padding-bottom: 40px;
+}
+
+p {
+    text-align: left;
+}
+
+.line {
+    grid-row: 1;
+    grid-column: 2;
+    width: 2px;
+    height: 1 / 8;
+    background-color: rgb(194, 208, 218);
+}
+
+.image-box {
+    grid-row: 1;
+    grid-column: 3;
+}
+
+/* for four images for for each prftfolio work: starts */
+.images-grid {
+    display: grid;
+    grid-gap: 10px;
+    grid-template-columns: auto auto;
+    grid-auto-rows: auto;
+}
+
+.heading {
+    text-align: center;
+}
+
+.screenshots {
+    width: auto;
+    height: 300px;
+    border: 3px solid rgb(219, 156, 238);
+}
+
+.screenshots:hover {
+    opacity: 0.7;
+}
+
+.heading {
+    grid-row: 1;
+    grid-column: 1 / 3;
+    margin-bottom: 25px;
+    font-size: 30px;
+    font-family: 'Courier New', Courier, monospace;
+    font-style: normal;
+}
+
+.first-image {
+    grid-row: 2;
+    grid-column: 1;
+    width: 100%;
+    height: 100%;
+}
+
+.learn-more-button {
+    grid-row: 3;
+    grid-column: 1 / 3;
+}
+/* for four images for for each prftfolio work: ends */
+
+.button-learn-more {
+    padding-left: 30px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 20px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    height: auto;
+    width: auto;
+    border-radius: 10px;
+    border: 2px solid rgb(226, 158, 226);
+    background-color: thistle;
+    font-size: 20px;
+    text-align: center;
+}
+
+.button-learn-more:hover {
+    background-color: rgb(206, 152, 206);
+    color: rgb(236, 226, 226);
+}
+
+
+.footer {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    height: auto;
+    width: 100%;
+    background-color: rgb(116, 108, 108);
+    margin-top: 50px;
+    border-top: 3px solid rgb(68, 70, 65);
+    padding-bottom: 5px;
+}
+
+.icons {
+    height: 50px;
+    width: 50px;
+    margin-top: 20px;
+    padding-right: 30px;
+}
+
+.icons:hover {
+    opacity: 0.5;
+}
+
+
+/* for iphone-x size screen */
+@media (max-width: 375px) {
+    
+    #heading-portfolio {
+       font-size: 30px; 
+       height: 40px;
+    }
+
+    #grid-container {
+        display: grid;
+        grid-gap: 70px;
+        grid-template-columns: auto; 
+        grid-auto-rows: auto;
+        margin-top: 30px;
+        margin-left: 20px;
+        margin-right: 20px;
+   }
+
+   h3 {
+       font-size: 30px;
+   }
+   
+    .line {
+        display: none;
+    }
+
+    .image-box {
+        grid-row: 2;
+        grid-column: 1;
+    }
+
+    .images-grid {
+        grid-template-columns: auto;
+    }
+
+    .heading {
+        grid-row: 1;
+        grid-column: 1;
+    }
+
+    .first-image {
+        grid-row: 2;
+        grid-column: 1;
+    }
+
+    .learn-more-button {
+        grid-row: 3;
+        grid-column: 1;
+    }
+
+    .horizontal-seperator-for-iphoneX-view {
+        grid-row: 7;
+        grid-column: 1;
+        height: 4px;
+        margin-top: 10px;
+        background-color: white;
+    }
+
+    .icons {
+        height: 30px;
+        width: 30px;
+        margin-top: 20px;
+        padding-right: 10px;
+    }
+}
+
+/* for iphone-x size screen */
+@media (max-width: 1024px) {
+    #heading-portfolio {
+        font-size: 50px; 
+        height: 70px;
+     }
+
+     #feedback-anker {
+        font-size: 40px;
+    }
+
+    #grid-container {
+        grid-gap: 30px;
+   }
+
+    .images-grid {
+        grid-template-columns: auto;
+    }
+
+    .line {
+        display: none;
+    }
+
+    .heading {
+        grid-row: 1;
+        grid-column: 1;
+    }
+
+    .fourth-image {
+        grid-row: 2;
+        grid-column: 1;
+    }
+
+    .learn-more-button {
+        grid-row: 3;
+        grid-column: 1;
+    }
+}
+
+
+
+
+
+
+
+
+
+

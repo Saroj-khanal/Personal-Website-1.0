@@ -1,0 +1,255 @@
+body {
+    background-color: black;
+    padding: 0px;
+    margin: 0px;
+}
+
+a, a:visited, a:hover, a:active {
+    text-decoration:none;
+    color: rgb(224, 218, 218);
+}
+
+.flex-container {
+    display: flex;
+    justify-content: center;
+    margin-right: -50px;
+}
+
+/* vertical email start */
+#vertical-email {
+    width: 40px;
+    height:  300px;
+    margin-top: 200px;
+    margin-left: 30px;
+}
+
+
+#vertical-content {
+    writing-mode: vertical-lr;
+    margin-left: 10px;
+    margin-top: 5px;
+    font-family: 'Sriracha', cursive;
+}
+          
+#vertical-content {  /* applied for both vertical content*/
+    writing-mode: vertical-lr;
+    margin-left: 10px;
+    margin-top: 5px;
+}
+
+a[href="tel:+13372404982"] {
+    color: whitesmoke;
+  }
+
+  a[href="mailto:sarojkhanal177@gmail.com"] {
+    color: whitesmoke;
+  }
+
+
+/* vertical email finish */
+
+/* vertical phone start */
+#vertical-phone {
+    width: 30px;
+    height: 290px;
+    margin-top: 200px;
+}
+
+.vertical-line {
+    width: 2px;
+    height: 390px;
+    background-color: white;
+    margin-top: 150px;
+    margin-left: 40px;
+    margin-right: 40px;
+}
+/* vertical phone finish */
+
+.ovalFaceImage {
+    margin-top: 230px;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+/* footer start: name, resume, portfolio */
+#footer {
+    color: white;
+    position: absolute;
+    top: 430px;
+}
+
+#name {
+    margin-left: 20px;
+    font-family: 'Belleza', sans-serif;
+    font-size: 40px;
+}
+
+
+#resume {
+    font-size: 25px;
+    margin-left: -15px;
+    font-family: 'Architects Daughter', cursive;
+}
+
+#portfolio {
+    font-size: 25px;
+    margin-left: 45px;
+    font-family: 'Architects Daughter', cursive;
+}
+
+
+
+#resume:hover, #portfolio:hover {  /* resume and portfolio hover*/
+    opacity: 0.5;
+    cursor: pointer;
+    color: yellow;
+}
+/* footer finish: name, resume, portfolio */
+
+.icons {
+    width: 50px;
+    margin-top: 35px;
+    margin-right: 25px;
+    margin-left: 20px;
+}
+
+.linkedin {
+    margin-top: 160px;
+}
+
+.icons:hover {
+    opacity: 0.6;
+    
+}
+
+#vertical-email:hover {
+    opacity: 0.7;
+    cursor: pointer;
+    opacity: 0.7;
+    cursor: pointer;
+}
+
+a:hover {
+    color: rgba(255, 166, 0, 0.986);
+}
+
+#vertical-phone:hover {
+    opacity: 0.7;
+    cursor: pointer;
+    opacity: 0.7;
+    cursor: pointer;
+}
+
+/* display for ipad-pro and ipad */
+@media(max-width: 1024px) {
+    .flex-container {
+        justify-content: space-around;
+        margin-right: 150px;
+        margin-left: 40px;
+    }
+    .icons {
+        margin-top: 35px;
+    }
+ }
+
+ /* display for minimized screen in laptop */
+ @media(max-width: 624px) {
+    #vertical-email {
+        margin-left: 120px;
+    }
+
+    .icons {
+        margin-left: 20px;
+    }
+ }
+
+
+ /* display for iphone-x*/
+ @media(max-width: 375px) {
+    #vertical-content {
+        writing-mode: vertical-lr;
+        margin-left: 10px;
+        margin-top: 5px;
+        font-size: 20px;
+    }
+
+    #vertical-email {
+        margin-left: 10px;
+    }
+    
+    .flex-container {
+        margin-left: 140px;
+    }
+
+    .ovalFaceImage {
+        height: 150px;
+        width: 150px;
+    }
+
+    .vertical-line {
+        display: none;
+    }
+
+    .icons {
+        margin-left: 55px;
+        margin-top: 20px;
+    }
+    .linkedin {
+        margin-top: 160px;
+    }
+
+    #portfolio {
+        margin-left: 35px;
+    }
+ }
+
+ /* galaxy fold*/
+ @media(max-width: 280px) {
+    #vertical-content {
+        font-size: 15px;
+    }
+   
+    .linkedin {
+        margin-top: 185px;
+    }
+
+    .ovalFaceImage {
+        height: 100px;
+        width: 100px;
+    }
+
+    .icons {
+        height: 30px;
+        width: 30px;
+        margin-left: 25px;
+    }
+
+    #resume {
+        margin-left:-15px;
+        font-size: 20px;
+    }
+
+    #name {
+        font-size: 30px;
+    }
+
+    #portfolio {
+        margin-left: 25px;
+        font-size: 20px;
+    }
+ }
+
+
+ 
+
+
+
+            
+
+
+
+
+
+
+
+
